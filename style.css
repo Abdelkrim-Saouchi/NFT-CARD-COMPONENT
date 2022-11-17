@@ -13,3 +13,45 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--main-bgc);
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-bgc);
+    max-width: 25%;
+    max-height: 60%;
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card img {
+    flex: 1;
+    flex-basis: 50%;
+    border-radius: 12px;
+}
+
+.card .container-texts {
+    flex: 1;
+    flex-basis: 50%;
+    border-radius: 12px;
+}
+
+.container-texts * {
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-weight: 600;
+    color: var(--white);
+}
+
