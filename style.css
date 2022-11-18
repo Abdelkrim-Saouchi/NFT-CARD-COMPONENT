@@ -32,12 +32,44 @@ body {
     flex-direction: column;
     gap: 12px;
     box-shadow: -10px 10px 20px 10px rgba(0, 0, 0, 0.4);
+    /* position: relative; */
 }
 
-.card img {
+.card .container-images {
     max-height: 50%;
     border-radius: 12px;
+    position: relative;
 }
+
+.container-images img {
+    
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 12px;
+}
+
+.card .hidden {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-top: -24px;
+    margin-left: -24px;
+    display: none;
+}
+
+.container-images:hover .hidden {
+    cursor: pointer;
+    display: block;
+}
+.container-images:hover .visible {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.container-images:hover {
+    background-color: var(--cyan);
+}
+
 
 
 .card .container-texts {
