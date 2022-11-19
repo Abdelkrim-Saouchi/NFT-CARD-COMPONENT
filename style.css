@@ -24,28 +24,29 @@ body {
 
 .card {
     background-color: var(--card-bgc);
-    max-width: 20%;
-    max-height: 50%;
+    max-width: 30%;
+    max-height: 60%;
     padding: 24px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     gap: 12px;
     box-shadow: -10px 10px 20px 10px rgba(0, 0, 0, 0.4);
-    /* position: relative; */
 }
 
 .card .container-images {
     max-height: 50%;
     border-radius: 12px;
     position: relative;
+    
 }
 
 .container-images img {
     
     max-width: 100%;
-    max-height: auto;
+    max-height: 100%;
     border-radius: 12px;
+    margin-bottom: -4px;
 }
 
 .card .hidden {
@@ -68,6 +69,7 @@ body {
 
 .container-images:hover {
     background-color: var(--cyan);
+
 }
 
 
@@ -168,4 +170,45 @@ h2 {
 h2:hover, .creator span:hover {
     color: var(--cyan);
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) and (min-width: 375px) {
+    .card {
+        background-color: var(--card-bgc);
+        max-width: 70%;
+        max-height: 90%;
+        padding: 24px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
+
+@media screen and (max-width: 600px) and (min-width: 501px) {
+    .card {
+        background-color: var(--card-bgc);
+        max-width: 55%;
+        max-height: 85%;
+        padding: 24px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 601px) {
+    .card {
+        background-color: var(--card-bgc);
+        max-width: 42%;
+        max-height: 72%;
+        padding: 24px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
 }
